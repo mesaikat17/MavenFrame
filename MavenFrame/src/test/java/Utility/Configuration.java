@@ -15,6 +15,8 @@ public class Configuration {
 				
 			FileInputStream file = new FileInputStream(f);
 			
+			pro = new Properties();
+			
 			pro.load(file);
 					
 	}

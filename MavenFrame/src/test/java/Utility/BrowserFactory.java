@@ -6,9 +6,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserFactory {
 	
-	WebDriver driver;
+	static WebDriver driver;
 
-	public WebDriver browser(WebDriver driver, String browserName, String url) {
+	public static WebDriver browser(WebDriver driver, String browserName, String url) {
 		
 		if(browserName.equalsIgnoreCase("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver1.exe");

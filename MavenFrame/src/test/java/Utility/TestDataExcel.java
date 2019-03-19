@@ -19,11 +19,13 @@ XSSFSheet sheet;
 			FileInputStream file = new FileInputStream(f);
 			
 			wb = new XSSFWorkbook(file);
+			
+			sheet = wb.getSheetAt(0);
 					
 	}
 	
-	public String getData(int sheetName, int row, int cell ) {
+	public String getData(int row, int cell ) {
 		
-		return wb.getSheetAt(sheetName).getRow(row).getCell(cell).getStringCellValue();
+		return sheet.getRow(row).getCell(cell).getStringCellValue();
 	}
 }

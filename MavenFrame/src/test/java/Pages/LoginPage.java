@@ -27,7 +27,7 @@ public void loginyatra(String username, String password) {
 	try {
 		Thread.sleep(3000);
 	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
+		
 		e.printStackTrace();
 	}
 	
