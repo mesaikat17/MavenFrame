@@ -1,7 +1,9 @@
 package TestCases;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -13,16 +15,17 @@ import Utility.TestDataExcel;
 
 public class BaseClass {
 
-	Configuration con;
-	WebDriver driver;
-	TestDataExcel exceldata;
+	public Configuration con;
+	public WebDriver driver;
+	public TestDataExcel exceldata;
 	LoginPage page;
 	
 	@BeforeSuite
 	public void setup() {
 		try {
 			con = new Configuration();
-		} catch (Exception e) {
+			exceldata = new TestDataExcel();
+			} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -31,13 +34,15 @@ public class BaseClass {
 	@BeforeMethod
 	public void startApp() {
 		
-		BrowserFactory.browser(driver, con.getBrowser(), con.getUrl());
+		driver = BrowserFactory.browser(driver, con.getBrowser(), con.getUrl());
 	}
 	
+	
 	@AfterMethod
-	public void stopApp() {
-		driver.quit();
+	public void stop() {
+		BrowserFactory.stopApp(driver);
 	}
+	
 	
 	@DataProvider (name = "loginpagedata")
 	public Object[][] rawdata(){
@@ -46,8 +51,8 @@ public class BaseClass {
 	
 		for(int i=0; i<2; i++) {
 		
-			data[i][0] = exceldata.getData(i, 0);
-			data[i][1] = exceldata.getData(i, 1);
+			data[i][0] = exceldata.getData(i,0);
+			data[i][1] = exceldata.getData(i,1);
 		}
 				
 		return data;

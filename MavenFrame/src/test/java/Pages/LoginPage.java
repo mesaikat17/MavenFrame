@@ -12,10 +12,10 @@ public class LoginPage {
 		this.driver=driver;
 	}
 	
-	@FindBy (id="login-input") WebElement uname;
-	@FindBy (id="login-continue-btn") WebElement unameButton;
-	@FindBy (id="login-password") WebElement pass;
-	@FindBy (id="login-submit-btn") WebElement loginButton;
+	@FindBy(id="login-input") WebElement uname;
+	@FindBy(id="login-continue-btn") WebElement unameButton;
+	@FindBy(id="login-password") WebElement pass;
+	@FindBy(id="login-submit-btn") WebElement loginButton;
 	
 
 
