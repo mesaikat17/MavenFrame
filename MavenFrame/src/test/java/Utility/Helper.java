@@ -5,26 +5,27 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.logging.FileHandler;
+
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.io.*;
+
 
 public class Helper {
 
-	public void capturescreenshot(WebDriver driver) {
+	public String capturescreenshot(WebDriver driver) {
 		
 		File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String screenshot = System.getProperty("user.dir")+"Screenshot_"+ getCurrentDateTime()+".jpg";
 		
 		try {
-			org.openqa.selenium.io.FileHandler.copy(scr, new File("./Screenshot/Screenshot_"+getCurrentDateTime()+".png"));
+			org.openqa.selenium.io.FileHandler.copy(scr, new File(screenshot));
 		} catch (IOException e) {
 		
 			e.printStackTrace();
 		}
-		
+		return screenshot;
 		}
 	
 	public static String getCurrentDateTime() {

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="1" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="98324" started-at="2019-03-25T07:09:18Z" finished-at="2019-03-25T07:10:57Z">
+  <suite name="Default suite" duration-ms="96812" started-at="2019-03-25T08:48:03Z" finished-at="2019-03-25T08:49:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="98324" started-at="2019-03-25T07:09:18Z" finished-at="2019-03-25T07:10:57Z">
+    <test name="Default test" duration-ms="96812" started-at="2019-03-25T08:48:03Z" finished-at="2019-03-25T08:49:40Z">
       <class name="TestCases.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.LoginTest@39c0f4a]" name="setup" is-config="true" duration-ms="567" started-at="2019-03-25T07:09:18Z" finished-at="2019-03-25T07:09:18Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="setup" is-config="true" duration-ms="603" started-at="2019-03-25T08:48:03Z" finished-at="2019-03-25T08:48:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="startApp()[pri:0, instance:TestCases.LoginTest@39c0f4a]" name="startApp" is-config="true" duration-ms="36799" started-at="2019-03-25T07:09:19Z" finished-at="2019-03-25T07:09:55Z">
+        <test-method status="PASS" signature="startApp()[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="startApp" is-config="true" duration-ms="35104" started-at="2019-03-25T08:48:03Z" finished-at="2019-03-25T08:48:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method status="PASS" signature="CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@39c0f4a]" name="CanLogin" duration-ms="15432" started-at="2019-03-25T07:09:55Z" data-provider="loginpagedata" finished-at="2019-03-25T07:10:11Z">
+        <test-method status="PASS" signature="CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="CanLogin" duration-ms="14106" started-at="2019-03-25T08:48:39Z" data-provider="loginpagedata" finished-at="2019-03-25T08:48:53Z">
           <params>
             <param index="0">
               <value>
@@ -31,22 +31,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CanLogin -->
-        <test-method status="PASS" signature="stop(org.testng.ITestResult)[pri:0, instance:TestCases.LoginTest@39c0f4a]" name="stop" is-config="true" duration-ms="2929" started-at="2019-03-25T07:10:11Z" finished-at="2019-03-25T07:10:14Z">
+        <test-method status="PASS" signature="stop(org.testng.ITestResult)[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="stop" is-config="true" duration-ms="3958" started-at="2019-03-25T08:48:53Z" finished-at="2019-03-25T08:48:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CanLogin status=SUCCESS method=LoginTest.CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@39c0f4a] output={null}]]]>
+                <![CDATA[[TestResult name=CanLogin status=SUCCESS method=LoginTest.CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@3abbfa04] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
-        <test-method status="PASS" signature="startApp()[pri:0, instance:TestCases.LoginTest@39c0f4a]" name="startApp" is-config="true" duration-ms="35007" started-at="2019-03-25T07:10:14Z" finished-at="2019-03-25T07:10:49Z">
+        <test-method status="PASS" signature="startApp()[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="startApp" is-config="true" duration-ms="34746" started-at="2019-03-25T08:48:57Z" finished-at="2019-03-25T08:49:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method status="FAIL" signature="CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@39c0f4a]" name="CanLogin" duration-ms="7484" started-at="2019-03-25T07:10:49Z" data-provider="loginpagedata" finished-at="2019-03-25T07:10:56Z">
+        <test-method status="FAIL" signature="CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="CanLogin" duration-ms="7531" started-at="2019-03-25T08:49:31Z" data-provider="loginpagedata" finished-at="2019-03-25T08:49:39Z">
           <params>
             <param index="0">
               <value>
@@ -61,16 +61,16 @@
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[LOGIN FAILED expected [https://www.yatra.com/] but found [https://secure.yatra.com/social/common/yatra/signin.htm]]]>
+              <![CDATA[Login Failed expected [https://www.yatra.com/] but found [https://secure.yatra.com/social/common/yatra/signin.htm]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: LOGIN FAILED expected [https://www.yatra.com/] but found [https://secure.yatra.com/social/common/yatra/signin.htm]
+              <![CDATA[java.lang.AssertionError: Login Failed expected [https://www.yatra.com/] but found [https://secure.yatra.com/social/common/yatra/signin.htm]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
-at TestCases.LoginTest.CanLogin(LoginTest.java:37)
+at TestCases.LoginTest.CanLogin(LoginTest.java:40)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -102,11 +102,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CanLogin -->
-        <test-method status="PASS" signature="stop(org.testng.ITestResult)[pri:0, instance:TestCases.LoginTest@39c0f4a]" name="stop" is-config="true" duration-ms="618" started-at="2019-03-25T07:10:56Z" finished-at="2019-03-25T07:10:57Z">
+        <test-method status="PASS" signature="stop(org.testng.ITestResult)[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="stop" is-config="true" duration-ms="1326" started-at="2019-03-25T08:49:39Z" finished-at="2019-03-25T08:49:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CanLogin status=FAILURE method=LoginTest.CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@39c0f4a] output={null}]]]>
+                <![CDATA[[TestResult name=CanLogin status=FAILURE method=LoginTest.CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@3abbfa04] output={null}]]]>
               </value>
             </param>
           </params>

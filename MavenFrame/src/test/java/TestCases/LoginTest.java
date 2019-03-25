@@ -18,8 +18,11 @@ public class LoginTest extends BaseClass {
 			e.printStackTrace();
 		}
 		
+		log = report.createTest("LOGIN to Yatra");
 		
 		page = PageFactory.initElements(driver, LoginPage.class);
+		
+		log.info("Application Initiated");
 		
 		page.loginyatra(username1, password1);
 		
@@ -34,7 +37,8 @@ public class LoginTest extends BaseClass {
 			e.printStackTrace();
 		}
 		
-		Assert.assertEquals(driver.getCurrentUrl(), url, "LOGIN FAILED");
+		Assert.assertEquals(driver.getCurrentUrl(), url, "Login Failed" );
+		
 		
 		System.out.println("LOGIN PASSED");
 		
