@@ -1,29 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="1" total="2" passed="0">
+<testng-results skipped="0" failed="1" ignored="1" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37" started-at="2019-03-19T15:36:05Z" finished-at="2019-03-19T15:36:05Z">
+  <suite name="Default suite" duration-ms="98324" started-at="2019-03-25T07:09:18Z" finished-at="2019-03-25T07:10:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37" started-at="2019-03-19T15:36:05Z" finished-at="2019-03-19T15:36:05Z">
+    <test name="Default test" duration-ms="98324" started-at="2019-03-25T07:09:18Z" finished-at="2019-03-25T07:10:57Z">
       <class name="TestCases.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.LoginTest@7d9d1a19]" name="setup" is-config="true" duration-ms="14" started-at="2019-03-19T15:36:05Z" finished-at="2019-03-19T15:36:05Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.LoginTest@39c0f4a]" name="setup" is-config="true" duration-ms="567" started-at="2019-03-25T07:09:18Z" finished-at="2019-03-25T07:09:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@7d9d1a19]" name="CanLogin" duration-ms="0" started-at="2019-03-19T15:36:05Z" data-provider="loginpagedata" finished-at="2019-03-19T15:36:05Z">
-          <exception class="java.lang.RuntimeException">
+        <test-method status="PASS" signature="startApp()[pri:0, instance:TestCases.LoginTest@39c0f4a]" name="startApp" is-config="true" duration-ms="36799" started-at="2019-03-25T07:09:19Z" finished-at="2019-03-25T07:09:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method status="PASS" signature="CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@39c0f4a]" name="CanLogin" duration-ms="15432" started-at="2019-03-25T07:09:55Z" data-provider="loginpagedata" finished-at="2019-03-25T07:10:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[takiastab2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[makali17]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CanLogin -->
+        <test-method status="PASS" signature="stop(org.testng.ITestResult)[pri:0, instance:TestCases.LoginTest@39c0f4a]" name="stop" is-config="true" duration-ms="2929" started-at="2019-03-25T07:10:11Z" finished-at="2019-03-25T07:10:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CanLogin status=SUCCESS method=LoginTest.CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@39c0f4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stop -->
+        <test-method status="PASS" signature="startApp()[pri:0, instance:TestCases.LoginTest@39c0f4a]" name="startApp" is-config="true" duration-ms="35007" started-at="2019-03-25T07:10:14Z" finished-at="2019-03-25T07:10:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method status="FAIL" signature="CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@39c0f4a]" name="CanLogin" duration-ms="7484" started-at="2019-03-25T07:10:49Z" data-provider="loginpagedata" finished-at="2019-03-25T07:10:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mesaikat17@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[makali17]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[java.lang.NullPointerException]]>
+              <![CDATA[LOGIN FAILED expected [https://www.yatra.com/] but found [https://secure.yatra.com/social/common/yatra/signin.htm]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+              <![CDATA[java.lang.AssertionError: LOGIN FAILED expected [https://www.yatra.com/] but found [https://secure.yatra.com/social/common/yatra/signin.htm]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at TestCases.LoginTest.CanLogin(LoginTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -41,22 +96,23 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
-at TestCases.BaseClass.rawdata(BaseClass.java:49)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-... 22 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CanLogin -->
+        <test-method status="PASS" signature="stop(org.testng.ITestResult)[pri:0, instance:TestCases.LoginTest@39c0f4a]" name="stop" is-config="true" duration-ms="618" started-at="2019-03-25T07:10:56Z" finished-at="2019-03-25T07:10:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CanLogin status=FAILURE method=LoginTest.CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@39c0f4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stop -->
       </class> <!-- TestCases.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

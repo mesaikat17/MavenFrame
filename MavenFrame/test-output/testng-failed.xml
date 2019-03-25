@@ -5,9 +5,9 @@
     <classes>
       <class name="TestCases.LoginTest">
         <methods>
-          <include name="CanLogin"/>
+          <include name="CanLogin" invocation-numbers="1"/>
           <include name="startApp"/>
-          <include name="stopApp"/>
+          <include name="stop"/>
           <include name="setup"/>
         </methods>
       </class> <!-- TestCases.LoginTest -->

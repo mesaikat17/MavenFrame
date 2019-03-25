@@ -23,6 +23,8 @@ public class LoginTest extends BaseClass {
 		
 		page.loginyatra(username1, password1);
 		
+		
+		
 		String url = "https://www.yatra.com/"; 
 		
 		try {
@@ -33,6 +35,7 @@ public class LoginTest extends BaseClass {
 		}
 		
 		Assert.assertEquals(driver.getCurrentUrl(), url, "LOGIN FAILED");
+		
 		System.out.println("LOGIN PASSED");
 		
 		try {
