@@ -68,12 +68,12 @@ public class BaseClass {
 			//help.capturescreenshot(driver);
 			log.fail("Test FAILED", MediaEntityBuilder.createScreenCaptureFromPath(help.capturescreenshot(driver)).build());
 			
-			System.out.println("Failure Status Captured and Report Generated"+help.capturescreenshot(driver));
+			System.out.println("Failure Status Captured and Report Generated");
 		}
 		
 		else {
 			log.pass("Test PASSED", MediaEntityBuilder.createScreenCaptureFromPath(help.capturescreenshot(driver)).build());
-			System.out.println("Pass Status Captured and Report Generated"+help.capturescreenshot(driver));
+			System.out.println("Pass Status Captured and Report Generated");
 		}
 		report.flush();
 		BrowserFactory.stopApp(driver);
