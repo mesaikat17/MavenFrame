@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="1" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="96812" started-at="2019-03-25T08:48:03Z" finished-at="2019-03-25T08:49:40Z">
+  <suite name="Default suite" duration-ms="46772" started-at="2019-03-31T08:05:00Z" finished-at="2019-03-31T08:05:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="96812" started-at="2019-03-25T08:48:03Z" finished-at="2019-03-25T08:49:40Z">
+    <test name="Default test" duration-ms="46772" started-at="2019-03-31T08:05:00Z" finished-at="2019-03-31T08:05:47Z">
       <class name="TestCases.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="setup" is-config="true" duration-ms="603" started-at="2019-03-25T08:48:03Z" finished-at="2019-03-25T08:48:03Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="setup" is-config="true" duration-ms="579" started-at="2019-03-31T08:05:00Z" finished-at="2019-03-31T08:05:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="startApp()[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="startApp" is-config="true" duration-ms="35104" started-at="2019-03-25T08:48:03Z" finished-at="2019-03-25T08:48:39Z">
+        <test-method status="PASS" signature="startApp()[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="startApp" is-config="true" duration-ms="34724" started-at="2019-03-31T08:05:00Z" finished-at="2019-03-31T08:05:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method status="PASS" signature="CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="CanLogin" duration-ms="14106" started-at="2019-03-25T08:48:39Z" data-provider="loginpagedata" finished-at="2019-03-25T08:48:53Z">
+        <test-method status="PASS" signature="CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="CanLogin" duration-ms="10828" started-at="2019-03-31T08:05:35Z" data-provider="loginpagedata" finished-at="2019-03-31T08:05:46Z">
           <params>
             <param index="0">
               <value>
@@ -24,89 +24,18 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[makali17]]>
+                <![CDATA[saikat12]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CanLogin -->
-        <test-method status="PASS" signature="stop(org.testng.ITestResult)[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="stop" is-config="true" duration-ms="3958" started-at="2019-03-25T08:48:53Z" finished-at="2019-03-25T08:48:57Z">
+        <test-method status="PASS" signature="stop(org.testng.ITestResult)[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="stop" is-config="true" duration-ms="1187" started-at="2019-03-31T08:05:46Z" finished-at="2019-03-31T08:05:47Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=CanLogin status=SUCCESS method=LoginTest.CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@3abbfa04] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stop -->
-        <test-method status="PASS" signature="startApp()[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="startApp" is-config="true" duration-ms="34746" started-at="2019-03-25T08:48:57Z" finished-at="2019-03-25T08:49:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startApp -->
-        <test-method status="FAIL" signature="CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="CanLogin" duration-ms="7531" started-at="2019-03-25T08:49:31Z" data-provider="loginpagedata" finished-at="2019-03-25T08:49:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mesaikat17@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[makali17]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Login Failed expected [https://www.yatra.com/] but found [https://secure.yatra.com/social/common/yatra/signin.htm]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Login Failed expected [https://www.yatra.com/] but found [https://secure.yatra.com/social/common/yatra/signin.htm]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at TestCases.LoginTest.CanLogin(LoginTest.java:40)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CanLogin -->
-        <test-method status="PASS" signature="stop(org.testng.ITestResult)[pri:0, instance:TestCases.LoginTest@3abbfa04]" name="stop" is-config="true" duration-ms="1326" started-at="2019-03-25T08:49:39Z" finished-at="2019-03-25T08:49:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CanLogin status=FAILURE method=LoginTest.CanLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@3abbfa04] output={null}]]]>
               </value>
             </param>
           </params>

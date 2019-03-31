@@ -83,12 +83,12 @@ public class BaseClass {
 	@DataProvider (name = "loginpagedata")
 	public Object[][] rawdata(){
 		
-		Object [][] data = new Object[2][2];
+		Object [][] data = new Object[1][2];
 	
-		for(int i=0; i<2; i++) {
+		for(int i=0; i<1; i++) {
 		
-			data[i][0] = exceldata.getData(i,0);
-			data[i][1] = exceldata.getData(i,1);
+			data[0][0] = exceldata.getData(0,0);
+			data[0][1] = exceldata.getData(0,1);
 		}
 				
 		return data;
